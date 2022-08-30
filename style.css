@@ -1,3 +1,35 @@
-body {
+/* Global */
+:root {
+  /* Color */
+  --color-white: #ffffff;
+  --color-light-white: #eeeeee;
+  --color-dark-white: #bdbdbd;
+  --color-violet: #cc94fd;
+  --color-dark-violet: #af53ff;
+  --color-black: #000000;
+  --color-dark-grey: #4d4d4d;
+  --color-grey: #7c7979;
+  --color-blue: #8692fc;
+  --color-yellow: #fcedac;
+  --color-orange: #ffe46e;
+
+  /* Font size */
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+
+  /* Size */
+}
+
+/* Universal tags */
+* {
+  box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
 }
