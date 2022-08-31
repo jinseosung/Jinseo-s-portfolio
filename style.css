@@ -11,9 +11,10 @@
   --color-black: #000000;
   --color-dark-grey: #4d4d4d;
   --color-grey: #7c7979;
+  --color-light-grey: #9b9999;
   --color-blue: #8692fc;
   --color-yellow: #fcedac;
-  --color-orange: #ffe46e;
+  --color-orange: #ffcc6e;
 
   /* Font size */
   --font-large: 48px;
@@ -151,6 +152,10 @@ h3 {
 .section {
   padding: 50px;
   text-align: center;
+  margin: auto;
+}
+
+.section__container {
   max-width: 1200px;
   margin: auto;
 }
@@ -224,4 +229,70 @@ h3 {
 
 .school__period {
   font-size: var(--font-micro);
+}
+
+/* Skill */
+#skills {
+  background-color: var(--color-yellow);
+}
+
+.skillset {
+  display: flex;
+  background-color: var(--color-light-grey);
+  color: var(--color-light-white);
+  margin: 20px 0;
+}
+
+.skillset__title {
+  margin-bottom: 18px;
+  color: var(--color-light-white);
+}
+
+.skillset__left {
+  flex-basis: 60%;
+  background-color: var(--color-dark-grey);
+  padding: 20px 40px;
+}
+
+.skillset__right {
+  flex-basis: 40%;
+}
+
+.skill {
+  margin-bottom: 32px;
+}
+
+.skill_description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill_description:first-child {
+  margin-bottom: 8px;
+}
+
+.sill__bar {
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-grey);
+}
+
+.skill__value {
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-orange);
+}
+
+.tools {
+  background-color: var(--color-grey);
+}
+
+.tools,
+.etc {
+  padding: 20px;
+}
+
+.tools__list li,
+.etc__list li {
+  margin-bottom: 8px;
 }
