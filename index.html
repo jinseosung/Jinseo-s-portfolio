@@ -11,7 +11,7 @@
       content="Portfolio for world-renowned software engineer Jinseo"
     />
     <link rel="icon" href="img/logo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
       rel="stylesheet"
@@ -55,7 +55,7 @@
     </section>
 
     <!-- About -->
-    <section id="about">
+    <section id="about" class="section">
       <h1 id="about">About me</h1>
       <p></p>
       <div class="about__majors">
@@ -63,27 +63,23 @@
           <div class="major__icon">
             <i class="fa-brands fa-html5 fa-xl"></i>
           </div>
-          <div class="major__title">HTML</div>
+          <h2 class="major__title">HTML</h2>
           <div class="major__description">
             HTML5, Markup rapide, Semantic tag
           </div>
         </div>
-      </div>
-      <div class="about__majors">
         <div class="major">
           <div class="major__icon">
             <i class="fa-brands fa-css3-alt fa-xl"></i>
           </div>
-          <div class="major__title">CSS</div>
+          <h2 class="major__title">CSS</h2>
           <div class="major__description">FlexBox, Grid</div>
         </div>
-      </div>
-      <div class="about__majors">
         <div class="major">
           <div class="major__icon">
             <i class="fa-brands fa-square-js fa-xl"></i>
           </div>
-          <div class="major__title">JavaScript</div>
+          <h2 class="major__title">JavaScript</h2>
           <div class="major__description">ES6, DOM APIs, Web APIs</div>
         </div>
       </div>
@@ -94,10 +90,12 @@
             alt="ironhack"
             class="school__logo"
           />
-          <p class="school__name">
-            Bootcamp en Développement Web en alternance à Ironhack
-          </p>
-          <p class="school__period">A partir d'Oct 2022</p>
+          <div class="school__description">
+            <p class="school__name">
+              Bootcamp en Développement Web en alternance à Ironhack Paris
+            </p>
+            <p class="school__period">D'Oct 2022 à Déc 2022</p>
+          </div>
         </div>
       </div>
     </section>
@@ -191,7 +189,8 @@
     <!-- Contact -->
     <section id="contact">
       <h1 class="contact__title">Contact me</h1>
-      <h2 class="contact__email">jinseosung22@gmail.com
+      <h2 class="contact__email">
+        jinseosung22@gmail.com
         <a href="mailto:jinseosung22@gmail.com">
           <i class="fa-solid fa-envelope"></i>
         </a>
