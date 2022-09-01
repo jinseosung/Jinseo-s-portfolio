@@ -12,12 +12,12 @@ document.addEventListener("scroll", () => {
   }
 });
 
-// Show navbar menu when it is clicked
+// Navbar toggle button for small screen
 const navbarMenu = document.querySelector(".navbar__menu");
 const toggleBtn = document.querySelector(".navbar__toggle-btn");
 
 toggleBtn.addEventListener("click", () => {
-  navbarMenu.classList.toggle("navbar--selected");
+  navbarMenu.classList.toggle("open");
 });
 
 // Handle scrolling when tapping on the navbar menu and "contact me" button
@@ -27,7 +27,7 @@ navbarMenu.addEventListener("click", (event) => {
   if (link === null) {
     return;
   }
-
+  navbarMenu.classList.remove("open");
   scrollToView(link);
 });
 

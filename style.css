@@ -415,6 +415,11 @@ h3 {
   #navbar {
     flex-direction: column;
     align-items: flex-start;
+    background-color: var(--color-violet);
+  }
+
+  #navbar.navbar--dark {
+    padding: 16px;
   }
 
   .navbar__menu {
@@ -424,7 +429,7 @@ h3 {
     display: none;
   }
 
-  .navbar--selected {
+  .navbar__menu.open {
     display: block;
   }
 
