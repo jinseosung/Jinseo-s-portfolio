@@ -16,6 +16,23 @@ document.addEventListener("scroll", () => {
 const navbarMenu = document.querySelector(".navbar__menu");
 const toggleBtn = document.querySelector(".navbar__toggle-btn");
 
-toggleBtn.addEventListener('click', ()=>{
-    navbarMenu.classList.toggle('navbar--selected')
-})
+toggleBtn.addEventListener("click", () => {
+  navbarMenu.classList.toggle("navbar--selected");
+});
+
+//Handle scrolling when tapping on the navbar menu
+const contactBtn = document.querySelector(".home__contact");
+
+function scrollToView(event) {
+  const target = event.target;
+  const link = target.dataset.link;
+  if (link === null) {
+    return;
+  }
+
+  const scrollTo = document.querySelector(link);
+  scrollTo.scrollIntoView({ behavior: "smooth" });
+}
+
+navbarMenu.addEventListener("click", scrollToView);
+contactBtn.addEventListener("click", scrollToView);
