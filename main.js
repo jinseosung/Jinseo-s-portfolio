@@ -32,11 +32,19 @@ navbarMenu.addEventListener("click", (event) => {
 });
 
 const contactBtn = document.querySelector(".home__contact");
-contactBtn.addEventListener("click", ()=>{
-    scrollToView('#contact');
+contactBtn.addEventListener("click", () => {
+  scrollToView("#contact");
 });
 
 function scrollToView(selector) {
-    const scrollTo = document.querySelector(selector);
-    scrollTo.scrollIntoView({ behavior: "smooth" });
-  }
+  const scrollTo = document.querySelector(selector);
+  scrollTo.scrollIntoView({ behavior: "smooth" });
+}
+
+//
+const home = document.querySelector(".home__container");
+const homeHeight = home.getBoundingClientRect().height;
+
+document.addEventListener("scroll", () => {
+  home.style.opacity = 1 - window.scrollY / homeHeight;
+});
