@@ -89,6 +89,7 @@ h3 {
   align-items: center;
   padding: 16px;
   transition: all var(--animation-duration) ease-in-out;
+  z-index: 10;
 }
 
 #navbar.navbar--dark {
@@ -161,6 +162,10 @@ h3 {
   border-radius: var(--size-border-radius);
   padding: 8px 12px;
   color: var(--color-white);
+}
+
+.home__contact:hover {
+  background-color: var(--color-orange);
 }
 
 /* Section common */
@@ -322,6 +327,7 @@ h3 {
   padding: 8px 48px;
   font-size: var(--font-regular);
   margin-bottom: 8px;
+  position: relative;
 }
 
 .category__btn.selected,
@@ -344,9 +350,9 @@ h3 {
   width: 24px;
   height: 24px;
   line-height: 24px;
-  position: relative;
+  position: absolute;
   top: -20px;
-  left: 4px;
+  right: 16px;
   opacity: 0;
   transition: all var(--animation-duration) ease-in;
 }
@@ -500,8 +506,18 @@ h3 {
     display: block;
   }
 
+  #home {
+    padding: 120px 0 0 0;
+  }
+
+  .section {
+    padding: 16px;
+    padding-top: 60px;
+  }
+
   .about__majors {
     flex-direction: column;
+    margin: 0;
   }
 
   .major {
@@ -510,5 +526,35 @@ h3 {
 
   .skillset {
     flex-direction: column;
+  }
+
+  .work__categories {
+    margin: 16px 0 8px 0;
+  }
+
+  .category__btn {
+    width: 100%;
+  }
+
+  .project {
+    flex-grow: 1;
+  }
+
+  #contact {
+    padding: 20px;
+  }
+
+  .contact__email i {
+    margin-top: 8px;
+  }
+
+  .arrow-up {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    right: 16px;
+    bottom: 16px;
+    padding: 0;
   }
 }
