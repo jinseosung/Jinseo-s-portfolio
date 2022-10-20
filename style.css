@@ -282,13 +282,25 @@ h3 {
 }
 
 .skill {
-  margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 30px;
 }
 
-.skill_description {
+.skill__description span i {
+  display: block;
+  display: flex;
+  align-items: center;
+  font-size: 70px;
+  margin-bottom: 10px;
+}
+
+/* .skill_description {
   display: flex;
   justify-content: space-between;
-}
+} */
 
 .skill_description:first-child {
   margin-bottom: 8px;
